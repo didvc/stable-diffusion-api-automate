@@ -8,10 +8,10 @@ A powerful command-line tool for automating Stable Diffusion image generation th
 ![CLI Interface](screenshot-cli.png)
 
 The colorized terminal interface showing:
-- **Real-time progress bars** with visual feedback
-- **Step-by-step generation tracking** 
-- **ETA estimates** and completion status
-- **Colorized output** for different message types
+- Real-time progress bars with visual feedback
+- Step-by-step generation tracking
+- ETA estimates and completion status
+- Colorized output for different message types
 
 ### Development Environment
 ![VS Code Integration](screenshot-vscode.png)
@@ -20,14 +20,14 @@ The tool integrates well with development environments, showing clean output and
 
 ## Features
 
-- 🚀 **Batch Processing**: Process multiple configurations from a JSONL file
-- 📊 **Real-time Progress**: Live progress bars with step-by-step generation tracking
-- 🎨 **Colorized Output**: Beautiful terminal interface with chalk-powered colors
-- ⌨️ **Graceful Exit**: Press 'z' to safely exit after current generation completes
-- 📁 **Organized Output**: Automatic date-based directory organization
-- 💾 **Metadata Saving**: Optional JSON metadata files with generation parameters
-- 🔧 **Flexible Configuration**: Extensive CLI options for customization
-- 📈 **Detailed Logging**: Verbose mode with timestamps and file paths
+- Batch Processing: Process multiple configurations from a JSONL file
+- Real-time Progress: Live progress bars with step-by-step generation tracking
+- Colorized Output: Beautiful terminal interface with chalk-powered colors
+- Graceful Exit: Press 'z' to safely exit after current generation completes
+- Organized Output: Automatic date-based directory organization
+- Metadata Saving: Optional JSON metadata files with generation parameters
+- Flexible Configuration: Extensive CLI options for customization
+- Detailed Logging: Verbose mode with timestamps and file paths
 
 ## Installation
 
@@ -41,7 +41,7 @@ npm install
 
 ### Prerequisites
 
-1. **Configure environment variables:**
+1. Configure environment variables:
 
 Copy the example environment file and customize it:
 ```bash
@@ -58,7 +58,7 @@ SD_WEBUI_URL=http://192.168.100.105:7860
 # OUTPUT_DIR=out
 ```
 
-2. **Start Stable Diffusion WebUI with API enabled:**
+2. Start Stable Diffusion WebUI with API enabled:
 
 ```bash
 # Windows
@@ -74,18 +74,18 @@ For more detailed API documentation, see: https://github.com/AUTOMATIC1111/stabl
 
 ## Quick Start
 
-1. **Prepare your configuration file** (`prompts/configs.jsonl`):
+1. Prepare your configuration file (`prompts/configs.jsonl`):
 ```jsonl
 {"prompt": "1girl, solo, green tracksuit, black hair, brown eyes, mischievous smile", "negative_prompt": "worst quality, bad quality", "width": 720, "height": 1280, "sampler_name": "Euler a", "steps": 28, "cfg_scale": 7, "seed": -1, "batch_size": 1, "n_iter": 2, "hires_fix": false}
 {"prompt": "1girl, solo, red dress, blonde hair, blue eyes, gentle smile", "negative_prompt": "worst quality, bad quality", "width": 720, "height": 1280, "sampler_name": "Euler a", "steps": 28, "cfg_scale": 7, "seed": -1, "batch_size": 1, "n_iter": 1, "hires_fix": false}
 ```
 
-2. **Run the tool**:
+2. Run the tool:
 ```bash
 npm start
 ```
 
-3. **Monitor progress** and press 'z' if you need to stop gracefully.
+3. Monitor progress and press 'z' if you need to stop gracefully.
 
 ## Usage
 
@@ -125,8 +125,8 @@ npm start -- --disable-log-config
 
 ### Keyboard Controls
 
-- **'z' or 'Z'**: Graceful exit (completes current generation then stops)
-- **Ctrl+C**: Force exit (immediate termination)
+- 'z' or 'Z': Graceful exit (completes current generation then stops)
+- Ctrl+C: Force exit (immediate termination)
 
 ## Environment Configuration
 
@@ -144,9 +144,9 @@ OUTPUT_DIR=out
 ### Configuration Priority
 
 Settings are applied in this order (highest to lowest priority):
-1. **Command-line arguments** (e.g., `--base-url http://localhost:8080`)
-2. **Environment variables** (from `.env` file)
-3. **Default values**
+1. Command-line arguments (e.g., `--base-url http://localhost:8080`)
+2. Environment variables (from `.env` file)
+3. Default values
 
 ### Common WebUI URL Examples
 
@@ -276,7 +276,7 @@ To start WebUI with API:
 ./webui.sh --listen --api
 ```
 
-**Important:** Both `--listen` and `--api` flags are required:
+Important: Both `--listen` and `--api` flags are required:
 - `--listen`: Allows connections from other machines
 - `--api`: Enables REST API endpoints
 

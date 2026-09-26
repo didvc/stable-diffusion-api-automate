@@ -19,8 +19,8 @@ Thank you for your interest in contributing to this project! We welcome contribu
 Before contributing, please:
 
 1. Read through the [README.md](README.md) to understand the project
-2. Check existing [issues](https://github.com/yuis-ice/stable-diffusion-api-automate/issues) to see if your idea or bug report already exists
-3. Look at [pull requests](https://github.com/yuis-ice/stable-diffusion-api-automate/pulls) to see what's being worked on
+2. Check existing [issues](https://github.com/didvc/stable-diffusion-api-automate/issues) to see if your idea or bug report already exists
+3. Look at [pull requests](https://github.com/didvc/stable-diffusion-api-automate/pulls) to see what's being worked on
 4. Review this contributing guide thoroughly
 
 ## Development Setup
