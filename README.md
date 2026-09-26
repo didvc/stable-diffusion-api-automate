@@ -1,3 +1,5 @@
+English · [日本語](README-ja.md) · [繁體中文](README-zh-TW.md) · [简体中文](README-zh.md)
+
 # Stable Diffusion API Automate
 
 A powerful command-line tool for automating Stable Diffusion image generation through the WebUI API. Generate multiple images with different configurations, monitor progress in real-time, and save results with metadata.
